@@ -11,7 +11,7 @@ Travaillez sur votre projet depuis la branche `dev` et faites des pull request v
 
 ## Utilisation
 Deux workflows de github actions sont disponibles:
-- un workflow de publication de release qui créera une pull request vers la branche `main` à chaque fois que vous ferez un commit sur la branche main. **pensez à faire des commits conventionnels**
+- un workflow de publication de release qui créera une pull request vers la branche `main` à chaque fois que vous ferez un commit sur la branche main. **pensez à faire des commits conventionnels** *pensez à réglez les autorisation du workflow : paramètres > actions > read and write permissions + allow github action to create PR*
 - un workflow de publication de docker qui créera une image docker, cette image sera publiée sur la registry github. (ce workflow est activable manuellement depuis l'onglet actions de votre repository, vous pouvez modifier le fichier `.github/workflows/docker-publish.yml` pour l'activer automatiquement à chaque push sur la branche `main`)
 
 Vous pouvez en ajouter autant que vous voulez, par exemple :
